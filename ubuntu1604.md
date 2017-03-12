@@ -147,6 +147,15 @@ if (!@val){
 ```
 $ ./build.sh -j1
 ```
+- ビルドコンフィグ実行（２回目以降）
+  - 下記手順は、重複パッチ適用によるビルド失敗回避の手順です。
+  - ２回目以降の build.sh は、各自の環境に合わせて指定してください。
+```
+$ mv ~/B2G/patches/patches.sh ~/B2G/patches/backup-patches.sh
+$ ./build.sh -j?
+```
+
+
 
 ### vdi file download link
 - 下記リンクからダウンロードできます（現在、ビルドが正常終了できるかまでを確認中です。）
