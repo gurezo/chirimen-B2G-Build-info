@@ -20,7 +20,7 @@ $ sudo apt-get -y autoclean
 ```
 
 ### Build Enviroment install steps
-[B2G OS ビルドの必要条件](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites)
+[B2G OS ビルドの必要条件](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites) より
 ```
 $ sudo apt-get install make=3.81-8.2ubuntu3
 $ sudo apt-mark hold make
@@ -44,7 +44,7 @@ $ sudo apt-get install --no-install-recommends autoconf2.13 bison bzip2 ccache c
 ### Ubuntu16.10 set up steps
 #### Ubuntu16.10の作業ですが、Ubuntu14.04.2にも適用しました・
 
-##### 既定の make のバージョンは 4.1 であり、android のビルドができません。この問題を回避するには、コンソールで次のコマンドを実行します:
+##### 既定の make のバージョンは 4.1 であり、android のビルドができません。<br />この問題を回避するには、コンソールで次のコマンドを実行します:
 ```
 $ wget http://ftp.us.debian.org/debian/pool/main/m/make-dfsg/make_3.81-8.2_amd64.deb
 $ sudo dpkg -i make_3.81-8.2_amd64.deb
@@ -80,6 +80,7 @@ $ sudo apt-get install -y android-tools-adb
 $ mkdir ~/.android
 $ vi ~/.android/adb_usb.ini
 ```
+
 #####  下記の内容を追記する  
 ~~~~
 # 例：Fx0, Open Web Board  
@@ -124,11 +125,13 @@ $ git config --global http.postBuffer 524288000
 ```
 $ git clone https://github.com/chirimen-oh/B2G.git
 ```
-- コンフィグ実行
+- config.sh 実行
 ```
 $ ./config.sh chirimen
 ```
-- teimeconst.plファイル372行目 の修正
+- teimeconst.plファイル372行目 の修正 Ubuntu16.04.4
+  - 厳密にはperl のバージョンが上がった問題
+  - [defined(@array) is deprecated](http://search.cpan.org/~rjbs/perl-5.16.0/pod/perldiag.pod#defined(@array)_is_deprecated)
 ```
 if (!defined(@val)) {
     @val = compute_values($hz);
