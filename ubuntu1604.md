@@ -151,7 +151,7 @@ $ ./build.sh -j1
   - 下記手順は、重複パッチ適用によるビルド失敗回避の手順です。
   - ２回目以降の build.sh のオプションは、各自の環境に合わせて指定してください。
 ```
-$ mv ~/B2G/patches/patches.sh ~/B2G/patches/backup-patches.sh
+$ mv ~/B2G/patches/patch.sh ~/B2G/patches/backup-patch.sh
 $ ./build.sh -j？
 ```
 
