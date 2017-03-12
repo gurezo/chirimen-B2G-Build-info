@@ -129,7 +129,9 @@ $ git clone https://github.com/chirimen-oh/B2G.git
 ```
 $ ./config.sh chirimen
 ```
-- teimeconst.plファイル372行目 の修正 Ubuntu16.04.4
+
+### config.sh 実行後の、Ubuntu16.04.2用修正作業
+- teimeconst.plファイル372行目 の修正 Ubuntu16.04.2
   - 厳密にはperl のバージョンが上がった問題
   - [defined(@array) is deprecated](http://search.cpan.org/~rjbs/perl-5.16.0/pod/perldiag.pod#defined(@array)_is_deprecated)
 ```
