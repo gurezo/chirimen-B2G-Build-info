@@ -155,8 +155,9 @@ $ mv ~/B2G/patches/patches.sh ~/B2G/patches/backup-patches.sh
 $ ./build.sh -j？
 ```
 
-
-
 ### vdi file download link
-- 下記リンクからダウンロードできます（現在、ビルドが正常終了できるかまでを確認中です。）
+- 下記リンクからダウンロードできます（3/11 15:59、ビルドが正常終了の確認が取れました。）
   - [Ubuntu16.04.2 vdi ファイル](https://drive.google.com/open?id=0Bw4DSuL6h4j_RzJJb1VMTU9TSnM)
+  - 上記ファイルサイズは、6GB強なので、ダウンロードに時間がかかります。
+
+![ビルドが正常終了とバージョン](./img/build-ok.png)
