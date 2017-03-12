@@ -20,7 +20,7 @@ $ sudo apt-get -y autoclean
 ```
 
 ### Build Enviroment install steps
-[B2G OS ビルドの必要条件](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites) より
+[B2G OS ビルドの必要条件](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites) より、引用
 ```
 $ sudo apt-get install make=3.81-8.2ubuntu3
 $ sudo apt-mark hold make
@@ -42,7 +42,7 @@ $ sudo apt-get install --no-install-recommends autoconf2.13 bison bzip2 ccache c
 ※自分の場合は、レポート送信をしてから進めました。
 
 ### Ubuntu16.10 set up steps
-#### Ubuntu16.10の作業ですが、Ubuntu14.04.2にも適用しました・
+#### Ubuntu16.10の作業ですが、Ubuntu14.04.2にも適用しました。
 
 ##### 既定の make のバージョンは 4.1 であり、android のビルドができません。<br />この問題を回避するには、コンソールで次のコマンドを実行します:
 ```
@@ -68,7 +68,7 @@ ccache -M 50G
 ```
 
 #####  adb インストール関連インストール
-[ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) より
+[ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) より、引用
 
 #####  adb setup
  ```
@@ -147,5 +147,5 @@ $ ./build.sh -j1
 ```
 
 ### vdi file download link
-下記リンクからダウンロードできます（現在、ビルドができまでかは確認中です。）
-[Ubuntu16.04.2 vdi ファイル](https://drive.google.com/open?id=0Bw4DSuL6h4j_RzJJb1VMTU9TSnM)
+- 下記リンクからダウンロードできます（現在、ビルドができまでかは確認中です。）
+  - [Ubuntu16.04.2 vdi ファイル](https://drive.google.com/open?id=0Bw4DSuL6h4j_RzJJb1VMTU9TSnM)
