@@ -1,6 +1,7 @@
 
 ### introduce
 Build Enviroment is making for Virtualbox
+Ubuntu version 16.04.2
 
 ### ubuntu install steps
 ```
@@ -22,7 +23,7 @@ $ sudo apt-get -y autoclean
 [B2G OS ビルドの必要条件](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites)
 ```
 $ sudo apt-get install make=3.81-8.2ubuntu3
-$ sudo apt-mark hold make 
+$ sudo apt-mark hold make
 ```
 
 上記手順で、「3.81-8.2ubuntu3」がありませんと、表示されますが作業を継続します。
@@ -67,7 +68,7 @@ ccache -M 50G
 ```
 
 #####  adb インストール関連インストール
-[ ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) より
+[ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) より
 
 #####  adb setup
  ```
@@ -123,7 +124,7 @@ $ git config --global http.postBuffer 524288000
 ```
 $ git clone https://github.com/chirimen-oh/B2G.git
 ```
-- ビルドコンフィグ実行
+- コンフィグ実行
 ```
 $ ./config.sh chirimen
 ```
@@ -137,3 +138,11 @@ if (!@val){
     @val = compute_values($hz);
 }
 ```
+- ビルドコンフィグ実行
+```
+$ ./build.sh -j1
+```
+
+### vdi file download link
+下記リンクからダウンロードできます（現在、ビルドができまでかは確認中です。）
+[Ubuntu16.04.2 vdi ファイル](https://drive.google.com/open?id=0Bw4DSuL6h4j_RzJJb1VMTU9TSnM)
