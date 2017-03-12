@@ -149,5 +149,5 @@ $ ./build.sh -j1
 ```
 
 ### vdi file download link
-- 下記リンクからダウンロードできます（現在、ビルドができまでかは確認中です。）
+- 下記リンクからダウンロードできます（現在、ビルドが正常終了できるかまでを確認中です。）
   - [Ubuntu16.04.2 vdi ファイル](https://drive.google.com/open?id=0Bw4DSuL6h4j_RzJJb1VMTU9TSnM)
