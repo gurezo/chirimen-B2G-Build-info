@@ -19,13 +19,13 @@ $ sudo apt-get -y autoclean
 ```
 
 ### Build Enviroment install steps
-[B2G OS ƒrƒ‹ƒh‚Ì•K—vğŒ](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites)
+[B2G OS ãƒ“ãƒ«ãƒ‰ã®å¿…è¦æ¡ä»¶](https://developer.mozilla.org/ja/docs/Archive/B2G_OS/B2G_build_prerequisites)
 ```
 $ sudo apt-get install make=3.81-8.2ubuntu3
 $ sudo apt-mark hold make 
 ```
 
-ã‹Lè‡‚ÅAu3.81-8.2ubuntu3v‚ª‚ ‚è‚Ü‚¹‚ñ‚ÆA•\¦‚³‚ê‚Ü‚·‚ªì‹Æ‚ğŒp‘±‚µ‚Ü‚·B
+ä¸Šè¨˜æ‰‹é †ã§ã€ã€Œ3.81-8.2ubuntu3ã€ãŒã‚ã‚Šã¾ã›ã‚“ã¨ã€è¡¨ç¤ºã•ã‚Œã¾ã™ãŒä½œæ¥­ã‚’ç¶™ç¶šã—ã¾ã™ã€‚
 
 ```
 $ sudo dpkg --add-architecture i386
@@ -36,81 +36,81 @@ $ sudo dpkg --add-architecture amd64
 $ sudo apt-get install --no-install-recommends autoconf2.13 bison bzip2 ccache curl flex gawk gcc g++ g++-multilib git lib32ncurses5-dev lib32z1-dev libgconf2-dev zlib1g:amd64 zlib1g-dev:amd64 zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip lzop libxml2-utils openjdk-8-jdk nodejs unzip python
 ```
 
-ã‹Lè‡‚ÅAuƒVƒXƒeƒ€‚ÉƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½Bv‚ÆAƒoƒOƒŒƒ|[ƒg‘—M‚Ì—L–³‚Ì
-•\¦‚³‚ê‚Ü‚·‚ªA–³‹‚µ‚Äì‹Æ‚ğŒp‘±‚µ‚Ü‚·B
-¦©•ª‚Ìê‡‚ÍAƒŒƒ|[ƒg‘—M‚ğ‚µ‚Ä‚©‚çi‚ß‚Ü‚µ‚½B
+ä¸Šè¨˜æ‰‹é †ã§ã€ã€Œã‚·ã‚¹ãƒ†ãƒ ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚ã€ã¨ã€ãƒã‚°ãƒ¬ãƒãƒ¼ãƒˆé€ä¿¡ã®æœ‰ç„¡ã®
+è¡¨ç¤ºã•ã‚Œã¾ã™ãŒã€ç„¡è¦–ã—ã¦ä½œæ¥­ã‚’ç¶™ç¶šã—ã¾ã™ã€‚
+â€»è‡ªåˆ†ã®å ´åˆã¯ã€ãƒ¬ãƒãƒ¼ãƒˆé€ä¿¡ã‚’ã—ã¦ã‹ã‚‰é€²ã‚ã¾ã—ãŸã€‚
 
 ### Ubuntu16.10 set up steps
-#### Ubuntu16.10‚Ìì‹Æ‚Å‚·‚ªAUbuntu14.04.2‚É‚à“K—p‚µ‚Ü‚µ‚½E
+#### Ubuntu16.10ã®ä½œæ¥­ã§ã™ãŒã€Ubuntu14.04.2ã«ã‚‚é©ç”¨ã—ã¾ã—ãŸãƒ»
 
-##### Šù’è‚Ì make ‚Ìƒo[ƒWƒ‡ƒ“‚Í 4.1 ‚Å‚ ‚èAandroid ‚Ìƒrƒ‹ƒh‚ª‚Å‚«‚Ü‚¹‚ñB‚±‚Ì–â‘è‚ğ‰ñ”ğ‚·‚é‚É‚ÍAƒRƒ“ƒ\[ƒ‹‚ÅŸ‚ÌƒRƒ}ƒ“ƒh‚ğÀs‚µ‚Ü‚·:
+##### æ—¢å®šã® make ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¯ 4.1 ã§ã‚ã‚Šã€android ã®ãƒ“ãƒ«ãƒ‰ãŒã§ãã¾ã›ã‚“ã€‚ã“ã®å•é¡Œã‚’å›é¿ã™ã‚‹ã«ã¯ã€ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã§æ¬¡ã®ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã—ã¾ã™:
 ```
 $ wget http://ftp.us.debian.org/debian/pool/main/m/make-dfsg/make_3.81-8.2_amd64.deb
 $ sudo dpkg -i make_3.81-8.2_amd64.deb
 $ sudo apt-mark hold make
 ```
 
-##### •K{‚ÌƒA[ƒLƒeƒNƒ`ƒƒ‚ğ’Ç‰Á
+##### å¿…é ˆã®ã‚¢ãƒ¼ã‚­ãƒ†ã‚¯ãƒãƒ£ã‚’è¿½åŠ 
 ```
 $ sudo dpkg --add-architecture i386
 $ sudo dpkg --add-architecture amd64
 ```
 
-#####  Ä“xƒrƒ‹ƒhŠÂ‹«ƒCƒ“ƒXƒg[ƒ‹
+#####  å†åº¦ãƒ“ãƒ«ãƒ‰ç’°å¢ƒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 ```
 $ sudo apt-get install --no-install-recommends autoconf2.13 bison bzip2 ccache curl flex gawk gcc g++ g++-multilib git lib32ncurses5-dev lib32z1-dev libgconf2-dev zlib1g:amd64 zlib1g-dev:amd64 zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip lzop libxml2-utils openjdk-8-jdk nodejs unzip python -y
 ```
 
-#####  ccache ‚Ìİ’è
+#####  ccache ã®è¨­å®š
 ```
 ccache -M 50G
 ```
 
-#####  adb ƒCƒ“ƒXƒg[ƒ‹ŠÖ˜AƒCƒ“ƒXƒg[ƒ‹
-[ ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) ‚æ‚è
+#####  adb ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«é–¢é€£ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+[ ubuntu_setup_dev/setup-adb.md](https://github.com/gurezo/ubuntu_setup_dev/blob/master/setup-adb.md) ã‚ˆã‚Š
 
 #####  adb setup
  ```
 $ sudo apt-get install -y android-tools-adb
 ```
 
-#####  adb_usb.ini •ÒW‚·‚é
+#####  adb_usb.ini ç·¨é›†ã™ã‚‹
 ```
 $ mkdir ~/.android
 $ vi ~/.android/adb_usb.ini
 ```
-#####  ‰º‹L‚Ì“à—e‚ğ’Ç‹L‚·‚é  
+#####  ä¸‹è¨˜ã®å†…å®¹ã‚’è¿½è¨˜ã™ã‚‹  
 ~~~~
-# —áFFx0, Open Web Board  
-# ‘¼‚ÌƒfƒoƒCƒX‚à“¯—l‚É‹Lq‚·‚é–
+# ä¾‹ï¼šFx0, Open Web Board  
+# ä»–ã®ãƒ‡ãƒã‚¤ã‚¹ã‚‚åŒæ§˜ã«è¨˜è¿°ã™ã‚‹äº‹
 # 1 USB VENDOR ID PER LINE.
 0x2207
 # 2 USB VENDOR ID PER LINE.
 0x1004
 ~~~~
 
-#####  ƒ‹[ƒ‹‚ğİ’è‚·‚é
+#####  ãƒ«ãƒ¼ãƒ«ã‚’è¨­å®šã™ã‚‹
 ```
 $ sudo vi /etc/udev/rules.d/51-android.rules
 ```
 
-#####   ‰º‹L‚Ì“à—e‚ğ’Ç‹L‚·‚é
+#####   ä¸‹è¨˜ã®å†…å®¹ã‚’è¿½è¨˜ã™ã‚‹
 ~~~~
-# —áFFx0, Open Web Board  
-# ‘¼‚ÌƒfƒoƒCƒX‚à“¯—l‚É‹Lq‚·‚é–
+# ä¾‹ï¼šFx0, Open Web Board  
+# ä»–ã®ãƒ‡ãƒã‚¤ã‚¹ã‚‚åŒæ§˜ã«è¨˜è¿°ã™ã‚‹äº‹
 SUBSYSTEM=="usb", ATTR{idVendor}=="2207", MODE="0666", GROUP="plugdev"
 SUBSYSTEM=="usb", ATTR{idVendor}=="1004", MODE="0666", GROUP="plugdev"
 ~~~~
 
-#####  İ’è‚ğ”½‰f‚ğ‚·‚éB
+#####  è¨­å®šã‚’åæ˜ ã‚’ã™ã‚‹ã€‚
 ```
 $ sudo udevadm control --reload
 ```
 
-### git ŠÖ˜A‚Ìè‡
-1. configuration e-mail / git ‚Ìƒ[ƒ‹‚Ìİ’è
-2. configuration username / git ‚Ìƒ†[ƒU[–¼‚Ìİ’è
-3. configuration http.postBuffer / git ‚Ì http.postBuffer ‚Ìİ’è
+### git é–¢é€£ã®æ‰‹é †
+1. configuration e-mail / git ã®ãƒ¡ãƒ¼ãƒ«ã®è¨­å®š
+2. configuration username / git ã®ãƒ¦ãƒ¼ã‚¶ãƒ¼åã®è¨­å®š
+3. configuration http.postBuffer / git ã® http.postBuffer ã®è¨­å®š
 
 ```
 $ git config --global user.email "you@example.com"
@@ -118,16 +118,16 @@ $ git config --global user.name "Your Name"
 $ git config --global http.postBuffer 524288000
 ```
 
-### B2G ƒrƒ‹ƒhì‹Æ
+### B2G ãƒ“ãƒ«ãƒ‰ä½œæ¥­
 - git clone
 ```
 $ git clone https://github.com/chirimen-oh/B2G.git
 ```
-- ƒrƒ‹ƒhƒRƒ“ƒtƒBƒOÀs
+- ãƒ“ãƒ«ãƒ‰ã‚³ãƒ³ãƒ•ã‚£ã‚°å®Ÿè¡Œ
 ```
 $ ./config.sh chirimen
 ```
-- teimeconst.plƒtƒ@ƒCƒ‹372s–Ú ‚ÌC³
+- teimeconst.plãƒ•ã‚¡ã‚¤ãƒ«372è¡Œç›® ã®ä¿®æ­£
 ```
 if (!defined(@val)) {
     @val = compute_values($hz);
